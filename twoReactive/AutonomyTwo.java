@@ -71,7 +71,14 @@ public class AutonomyTwo extends Robot {
 		// main control loop: perform simulation steps of timeStep milliseconds
 		// and leave the loop when the simulation is over
 		while (step(timeStep) != -1) {	   
-			
+			boolean recherche=true;
+			while(recherche){
+				//déplacement dans le labyrinthe en recherche de la cible
+			}
+			boolean cible=true;
+			while(cible){
+				//déplacement vers la cible
+			}
 		}
 	}
 	
