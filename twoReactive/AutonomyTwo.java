@@ -2,6 +2,7 @@ package twoReactive;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import com.cyberbotics.webots.controller.Camera;
 import com.cyberbotics.webots.controller.CameraRecognitionObject;
@@ -77,11 +78,21 @@ public class AutonomyTwo extends Robot {
 				//déplacement dans le labyrinthe en recherche de la cible
 				double[]dist=this.readDistanceSensorValues();
 				if(dist[0]>80 || dist[1]>80 || dist[2]>80){//obstacle droite
-
+					move(21,-21);
 				}else if(dist[5]>80 || dist[6]>80 || dist[7]>80){//obstacle gauche
-
+					move(-21,21);
 				}else{//pas d'obstacle
+					Random rand = new Random();
+					int nombre = rand.nextInt(4);//si 0 gauche,1 droite,2 devant 3 derrière
+					if(nombre==0){
 
+					}else if(nombre==1){
+
+					}else if(nombre==2){
+
+					}else{
+
+					}
 				}
 			}
 
