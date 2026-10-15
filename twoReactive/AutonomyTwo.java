@@ -66,12 +66,13 @@ public class AutonomyTwo extends Robot {
 	/**
 	 * The main method of the robot behaviour
 	 */	
-	public void run() {	
-		
+	public void run() {
+		boolean recherche=true;
+		boolean cible=true;
 		// main control loop: perform simulation steps of timeStep milliseconds
 		// and leave the loop when the simulation is over
 		while (step(timeStep) != -1) {	   
-			boolean recherche=true;
+
 			while(recherche){
 				//déplacement dans le labyrinthe en recherche de la cible
 				double[]dist=this.readDistanceSensorValues();
@@ -83,7 +84,7 @@ public class AutonomyTwo extends Robot {
 
 				}
 			}
-			boolean cible=true;
+
 			while(cible){
 				//déplacement vers la cible
 			}
