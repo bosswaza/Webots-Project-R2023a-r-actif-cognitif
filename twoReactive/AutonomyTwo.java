@@ -74,6 +74,14 @@ public class AutonomyTwo extends Robot {
 			boolean recherche=true;
 			while(recherche){
 				//déplacement dans le labyrinthe en recherche de la cible
+				double[]dist=this.readDistanceSensorValues();
+				if(dist[0]>80 || dist[1]>80 || dist[2]>80){//obstacle droite
+
+				}else if(dist[5]>80 || dist[6]>80 || dist[7]>80){//obstacle gauche
+
+				}else{//pas d'obstacle
+
+				}
 			}
 			boolean cible=true;
 			while(cible){
