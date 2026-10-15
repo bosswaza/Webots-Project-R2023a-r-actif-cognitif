@@ -85,13 +85,13 @@ public class AutonomyTwo extends Robot {
 					Random rand = new Random();
 					int nombre = rand.nextInt(4);//si 0 gauche,1 droite,2 devant 3 derrière
 					if(nombre==0){
-
+						move(21,-21);
 					}else if(nombre==1){
-
+						move(-21,21);
 					}else if(nombre==2){
-
+						move(21,21);
 					}else{
-
+						move(-21,-21);
 					}
 				}
 			}
